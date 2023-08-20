@@ -104,7 +104,7 @@ const LikeButton = ({blogId, likes}) => {
       }
       const checkIsLiked = async() =>{
         try {
-            const response = await axios.post("http://localhost:5000/api/blogs/getisLiked", {
+            const response = await axios.post("https://blogbunny-backend.onrender.com/api/blogs/getisLiked", {
                 blogId:blogId
             })
     

@@ -31,7 +31,7 @@ const CommunityBlog = () => {
         position: toast.POSITION.TOP_RIGHT,
       });
     try {
-        const data=await axios.put(`http://localhost:1337/api/blogs/${params.cid}`,{data:valued})
+        const data=await axios.put(`https://strapi-backend-2qkp.onrender.com/api/blogs/${params.cid}`,{data:valued})
         console.log(data)
         const id = data.data.data.id;
         const t = data.data.data.attributes.title;
@@ -106,7 +106,7 @@ const CommunityBlog = () => {
   useEffect(() => {
     const fetchfn = async () => {
       const bl = await axios.get(
-        `http://localhost:1337/api/blogs/${params.cid}`
+        `https://strapi-backend-2qkp.onrender.com/api/blogs/${params.cid}`
       );
       const id = bl.data.data.id;
       const t = bl.data.data.attributes.title;

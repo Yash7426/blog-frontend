@@ -15,7 +15,7 @@ const Community = () => {
         position: toast.POSITION.TOP_RIGHT,
       });
       try {
-        const a = await axios.get("http://localhost:1337/api/blogs");
+        const a = await axios.get("https://strapi-backend-2qkp.onrender.com/api/blogs");
         a.data.data.map((item) => {
           const id = item.id;
           const t = item.attributes.title;
@@ -71,7 +71,7 @@ const Community = () => {
       position: toast.POSITION.TOP_RIGHT,
     });
     try {
-      const data = await axios.post("http://localhost:1337/api/blogs", {
+      const data = await axios.post("https://strapi-backend-2qkp.onrender.com/api/blogs", {
         data: valued,
       });
       const id = data.data.data.id;

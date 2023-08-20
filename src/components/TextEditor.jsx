@@ -151,7 +151,7 @@ const TextEditor = () => {
     });
     try {
       const postBlog = await axios.post(
-        "http://localhost:5000/api/blogs/create",
+        "https://blogbunny-backend.onrender.com/api/blogs/create",
         formdata
       );
       console.log(postBlog.data);
@@ -206,7 +206,7 @@ const TextEditor = () => {
     });
     try {
       const postBlog = await axios.post(
-        "http://localhost:5000/api/blogs/update",
+        "https://blogbunny-backend.onrender.com/api/blogs/update",
         formdata
       );
       console.log(postBlog);
