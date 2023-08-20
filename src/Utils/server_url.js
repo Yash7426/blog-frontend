@@ -1,3 +1,3 @@
-const Server_url='http://localhost:5000/'
+const Server_url='https://blogbunny-backend.onrender.com/'
 
 export default Server_url;
